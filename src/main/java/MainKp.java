@@ -21,6 +21,13 @@ public class MainKp {
         WebElement element = driver.findElement(By.xpath("//*[@id='adDescription7321776']/div/section[2]/div[1]/div[1]/a"));
         element.sendKeys(Keys.ENTER);
 
+        System.out.println(driver.getTitle());
+
+        if (driver.getTitle().equalsIgnoreCase("iPhone 13, iPhone 12, iPhone 11 - NOVO! - KupujemProdajem")){
+            System.out.println("Validan test");
+        }else {
+            System.out.println("Nevalidan test");
+        }
 
 
 
